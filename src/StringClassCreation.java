@@ -35,5 +35,13 @@ public class StringClassCreation {
         //after a new b oject is created, it no longer shares the same ref number as the a object.
         //therefore b == a will return false.
         
+        
+        String s1 = "a";
+        String s2 = "a";
+        System.out.println(s1==s2);//returns true. s1 and s2 will refer to same object
+        
+        s1 = new String("a");
+        s2 = new String("a");
+        System.out.println(s1==s2);//returns false. s1 and s2 will refer to two different objects
     }
 }

@@ -18,8 +18,10 @@ public class WHWWW {
         InputStreamReader insr = new InputStreamReader(ins);
         BufferedReader bfr = new BufferedReader(insr);
         // or try this bfr = new BufferedReader(new InputStreamReader(u.openStream()));
-        System.out.println(bfr);
-        System.out.println("Hi");
+        String webContent = bfr.readLine();
+        System.out.println(webContent);
+        //System.out.println(bfr);
+        //System.out.println("Hi");
         
     }
 }
