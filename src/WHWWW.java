@@ -8,8 +8,18 @@
  *
  * @author javao
  */
+import java.net.URL;
+import java.io.*;
+
 public class WHWWW {
-    public static void main(String[] args){
+    public static void main(String[] args) throws Exception{
+        URL u = new URL("https://www.whitehouse.gov/");
+        InputStream ins = u.openStream();
+        InputStreamReader insr = new InputStreamReader(ins);
+        BufferedReader bfr = new BufferedReader(insr);
+        // or try this bfr = new BufferedReader(new InputStreamReader(u.openStream()));
+        System.out.println(bfr);
+        System.out.println("Hi");
         
     }
 }
